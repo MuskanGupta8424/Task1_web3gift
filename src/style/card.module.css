@@ -198,7 +198,7 @@ justify-content: center;
   line-height: 1.4rem;
   transition: 0.5s;
   letter-spacing: 1px;
-  background-color: red;
+  /* background-color: red; */
 }
 .indicator {
   padding: 0.4rem;
