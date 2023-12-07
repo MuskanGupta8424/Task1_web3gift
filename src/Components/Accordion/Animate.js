@@ -1,6 +1,5 @@
-import React,{useEffect} from 'react'
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from 'react'
+import { motion } from 'framer-motion';
 
 function Animate() {
     const fadeInVariants = {
@@ -22,7 +21,7 @@ function Animate() {
           variants={fadeInVariants}
           transition={{ duration: 1 }}
         >
-          <h1>Fade In Animation</h1>
+          {/* <h1>Fade In Animation</h1> */}
         </motion.div>
       );
 }

@@ -7,32 +7,32 @@ import Animate from "./Accordion/Animate";
 import { motion } from 'framer-motion';
 
 export default function Home() {
-  const fadeInVariants = {
+  const fadeInVariant = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   };
-  const container1 = {
-    hidden: { opacity: 1, scale: 0 },
-visible: {
-opacity: 1,
-scale: 1,
-transition: {
-  delayChildren: 0.3,
-  staggerChildren: 0.2,
-}
-}
-  };
+//   const container1 = {
+//     hidden: { opacity: 1, scale: 0 },
+// visible: {
+// opacity: 1,
+// scale: 1,
+// transition: {
+//   delayChildren: 0.3,
+//   staggerChildren: 0.2,
+// }
+// }
+  // };
 
   return (
     <>
     <motion.div
           initial="hidden"
           animate="visible"
-          variants={fadeInVariants}
+          variants={fadeInVariant}
           transition={{ duration: 1 }}
         >
       <div className={styles.container}>
-        <Animate/>
+        {/* <Animate/> */}
         <Card />
         <Card2 />
         <Card3 />
