@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styles from "../style/card.module.css";
 import Card from "./Card";
 import Card2 from "./Card2";
@@ -18,25 +18,26 @@ opacity: 1,
 scale: 1,
 transition: {
   delayChildren: 0.3,
-  staggerChildren: 0.2,
+  staggerChildren: 0.5,
 }
 }
   };
-
+ 
   return (
     <>
     <motion.div
           initial="hidden"
           animate="visible"
-          variants={fadeInVariants}
+          variants={{fadeInVariants, container1}}
           transition={{ duration: 1 }}
+          className={styles.container}
         >
-      <div className={styles.container}>
+      {/* <div className={styles.container}> */}
         {/* <Animate/> */}
         <Card />
         <Card2 />
         <Card3 />
-      </div>
+      {/* </div> */}
       </motion.div>
 
     </>
