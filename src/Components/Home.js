@@ -28,7 +28,7 @@ transition: {
     <motion.div
           initial="hidden"
           animate="visible"
-          variants={fadeInVariants}
+          variants={fadeInVariant}
           transition={{ duration: 1 }}
           className={styles.container}
         >
